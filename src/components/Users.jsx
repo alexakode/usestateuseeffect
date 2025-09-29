@@ -11,7 +11,7 @@ export default function listUsers() {
   const [email, setEmail] = useState("");
 
   const handleAddUser = () => {
-    if (!username || email) return;
+    if (!username || !email) return;
     const newUser = { username, email };
     setUsers([...users, newUser]);
     setUsername("");
